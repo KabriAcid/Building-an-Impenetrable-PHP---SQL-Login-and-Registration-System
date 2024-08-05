@@ -21,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+    <link rel="icon" type="image/png" href="https://www.paypalobjects.com/webstatic/icon/pp32.png">
      <!-- Water.css CDN  -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
     <!-- I designed the HTML form -->
