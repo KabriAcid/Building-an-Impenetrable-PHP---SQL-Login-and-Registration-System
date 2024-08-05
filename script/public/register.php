@@ -21,6 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+     <!-- Water.css CDN  -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
     <!-- I designed the HTML form -->
 </head>
 <body>
@@ -32,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
         <button type="submit">Register</button>
+        <p>Already have an account? <a href="index.php">Login</a></p>
     </form>
 </body>
 </html>
