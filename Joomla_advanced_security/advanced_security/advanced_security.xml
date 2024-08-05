@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.9" client="site" folder="advanced_security">
+    <name>PLG_ADVANCED_SECURITY</name> <!-- I wrote the plugin name here. -->
+    <description>Advanced Security Plugin for Joomla</description> <!-- I wrote a description of the plugin. -->
+    <files>
+        <filename>advanced_security.php</filename> <!-- I included the main plugin file here. -->
+        <folder>language/en-GB</folder> <!-- I included the language folder for the plugin. -->
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="example_field" type="text" label="Example Field" description="An example field for the plugin." /> <!-- I created an example configuration field. -->
+            </fieldset>
+        </fields>
+    </config>
+</extension>
