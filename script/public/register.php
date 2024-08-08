@@ -8,11 +8,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // I validated user input
-    if (register_user($username, $email, $password)) {
-        echo "Registration successful.";
+    // Enhanced email validation to ensure it contains a period in the domain part
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+    } elseif (!strpos(substr($email, strpos($email, '@')), '.')) {
+        echo "Email must contain a period (.) in the domain part.";
     } else {
-        echo "Registration failed.";
+        // I validated user input
+        if (register_user($username, $email, $password)) {
+            echo "Registration successful.";
+        } else {
+            echo "Registration failed.";
+        }
     }
 }
 ?>
