@@ -86,8 +86,10 @@ function register_user($username, $email, $password) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- I set the character encoding to UTF-8 for proper handling of text -->
-    <title>Register</title> <!-- I set the title of the registration page -->
+    <meta charset="UTF-8">
+    <title>Register</title>
+        <!-- Added some water.css styles to the webpage -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
     <!-- I created the registration form -->

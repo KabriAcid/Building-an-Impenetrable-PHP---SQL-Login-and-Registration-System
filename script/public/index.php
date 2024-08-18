@@ -42,9 +42,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <!-- I designed the HTML form -->
+    <!-- Added some water.css styles to the webpage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
+    <!-- I designed the HTML form -->
     <form action="index.php" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
