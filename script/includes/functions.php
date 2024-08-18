@@ -5,14 +5,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Phpml\AnomalyDetection\GaussianMixture;
 
-// I implemented user registration
-function register_user($username, $email, $password) {
-    global $pdo;
-    $hashed_password = password_hash($password, PASSWORD_BCRYPT);
-    $stmt = $pdo->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
-    return $stmt->execute([$username, $email, $hashed_password]);
-}
-
 // I implemented user authentication
 function authenticate_user($username, $password) {
     global $pdo;
