@@ -100,13 +100,13 @@ function register_user($username, $email, $password) {
         <label for="username">Username:</label> <!-- I labeled the username input field -->
         <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9_]{5,20}$" title="Username should be 5-20 characters long, and can include letters, numbers, and underscores only."> <!-- I set a pattern for valid usernames -->
 
-        <label for="email">Email:</label> <!-- I labeled the email input field -->
-        <input type="email" id="email" name="email" required> <!-- I added the email input field -->
+        <label for="email">Email:</label> 
+        <input type="email" id="email" name="email" required>
 
-        <label for="password">Password:</label> <!-- I labeled the password input field -->
-        <input type="password" id="password" name="password" required> <!-- I added the password input field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required> 
 
-        <button type="submit">Register</button> <!-- I added the submit button to submit the form -->
+        <button type="submit">Register</button>
     </form>
 </body>
 </html>
